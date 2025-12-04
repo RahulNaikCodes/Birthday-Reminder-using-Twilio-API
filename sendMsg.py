@@ -25,8 +25,10 @@ to_whatsapp = None
 # Twilio sandbox resets every 2 days.
 # Send your sandbox activation code every 24 hours to keep program running automatically
 # body consists of your activation code reminder
+# set activation_code as your activation code (get it from twilio sandbox)
+activation_code = None
 client.messages.create(from_=from_whatsapp,
-                       body='join rose-written',
+                       body=f'{activation_code}',
                        to=to_whatsapp)
 
 # Check for birthdays on current date
