@@ -17,6 +17,7 @@ A **Flask-based Python application** that stores birthdays, manages records thro
 - Twilio account
 - Account SID & Auth Token
 - Twilio WhatsApp Sandbox number
+- Twilio Sandbox Activation code
 - PythonAnywhere account for hosting
 - Python installed locally
 
