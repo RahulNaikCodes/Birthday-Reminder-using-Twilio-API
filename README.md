@@ -57,15 +57,13 @@ if __name__ == "__main__":
 ---
 ##  Hosting on PythonAnywhere
 ### Deployment Steps
-```mermaid
-flowchart TD
-    A[Open PythonAnywhere Dashboard] --> B[Go to Web Tab]
-    B --> C[Click 'Add a new web app']
-    C --> D[Select 'Manual configuration']
-    D --> E[Choose Python version]
-    E --> F[Check version using `python --version`]
-    F --> G[Create Web App]
-```
+1. Go to the Web Tab.
+2. Add a new web app.
+3. Select Manual configuration.
+4. Choose python version
+5. Check version using `python --version`
+6. Create a web app
+7. Go to console tab.
 
 8. Create a virtual environment in **Console → Bash**
 ```bash
