@@ -7,6 +7,18 @@ from datetime import datetime
 path = None
 sheet = None
 birthdays = pd.read_excel(f"{path}", sheet_name=f"{sheet}")
+months = {"January":1,
+          "February":2,
+          "March":3,
+          "April":4
+          "May":5,
+          "June":6,
+          "July":7,
+          "August":8,
+          "September":9,
+          "October":10,
+          "November":11,
+          "December": 12}
 
 # Get today's date to check if there is a birthday today
 date_today = datetime.now()
@@ -34,7 +46,7 @@ client.messages.create(from_=from_whatsapp,
 # Check for birthdays on current date
 text = ""
 for row in birthdays.itertuples(index=True, name="Row"):
-    if row.Day == today[1] and row.Month == today[0]:
+    if row.Day == today[1] and row.Month == months[today[0]]:
         text += f"Today is {row.Name}'s birthday!\n"
 
 # If there is/are birthdays, get a reminder on WhatsApp
